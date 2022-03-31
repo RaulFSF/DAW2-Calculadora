@@ -1,0 +1,66 @@
+<div class="container bg-secondary w-50 p-3 text-white">
+    <app-text-area operation="{{ operation }}" res ="{{ res }}"></app-text-area>
+
+    <div class="row mb-1">
+        <div class="col text-center">
+            <button (click)="addItem('/')" class="btn btn-light w-100">/</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('*')" class="btn btn-light w-100">x</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('+')"  class="btn btn-light w-100">+</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('-')" class="btn btn-light w-100">-</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="clean()"  class="btn btn-light w-100">AC</button>
+        </div>
+    </div>
+    <div class="row mb-1">
+        <div class="col text-center">
+            <button (click)="addItem('7')" class="btn btn-light w-100">7</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('8')" class="btn btn-light w-100">8</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('9')" class="btn btn-light w-100">9</button>
+        </div>
+    </div>
+
+    <div class="row mb-1">
+        <div class="col text-center">
+            <button (click)="addItem('4')" class="btn btn-light w-100">4</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('5')" class="btn btn-light w-100">5</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('6')" class="btn btn-light w-100">6</button>
+        </div>
+    </div>
+    <div class="row mb-1">
+        <div class="col text-center">
+            <button (click)="addItem('1')" class="btn btn-light w-100">1</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('2')" class="btn btn-light w-100">2</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('3')" class="btn btn-light w-100">3</button>
+        </div>
+    </div>
+    <div class="row mb-1">
+        <div class="col text-center">
+            <button (click)="addItem('.')" class="btn btn-light w-100">.</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="addItem('0')" class="btn btn-light w-100">0</button>
+        </div>
+        <div class="col text-center">
+            <button (click)="evaluate()" class="btn btn-light w-100">=</button>
+        </div>
+    </div>
+</div>
